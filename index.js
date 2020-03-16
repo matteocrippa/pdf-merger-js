@@ -58,6 +58,10 @@ class PDFMerger {
       }
     }
   }
+  
+  async pdf() {
+    return await this.doc.end();
+  }
 
   async save (fileName) {
     try {
